@@ -1,5 +1,5 @@
 import "./styles.css";
-import { WhatsAppButton } from "./components";
+import WhatsAppFloatingClient from "./WhatsAppFloatingClient";
 
 export const metadata = {
   title: "WEUP Chinese Herbal Ingredients",
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {children}
-        <WhatsAppButton />
+        <WhatsAppFloatingClient />
       </body>
     </html>
   );
