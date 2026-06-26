@@ -7,6 +7,11 @@ export const metadata = {
     "B2B supplier of Chinese herbal raw materials, botanical extracts, TCM ingredients and OEM private label herbal products."
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
