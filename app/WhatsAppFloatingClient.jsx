@@ -9,7 +9,8 @@ export default function WhatsAppFloatingClient() {
   const [isActive, setIsActive] = useState(false);
   const buttonStyle = {
     position: "fixed",
-    right: "22px",
+    left: "calc(100vw - 84px)",
+    right: "auto",
     bottom: "22px",
     zIndex: 120,
     width: "62px",
