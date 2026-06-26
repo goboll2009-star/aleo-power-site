@@ -33,7 +33,7 @@ export function Header({ dark = false }) {
       </a>
       <nav>
         <div className="mega-trigger">
-          <button type="button">Products <ArrowRight size={13} /></button>
+          <a href="/products">Products <ArrowRight size={13} /></a>
           <div className="mega-menu">
             <div className="mega-panel">
               <div className="mega-intro">
@@ -45,7 +45,7 @@ export function Header({ dark = false }) {
                 {products.slice(0, 6).map((product, index) => {
                   const Icon = icons[index % icons.length];
                   return (
-                    <a key={product.name}>
+                    <a href="/products" key={product.name}>
                       <Icon size={18} />
                       <span>
                         <strong>{product.name}</strong>
@@ -66,7 +66,7 @@ export function Header({ dark = false }) {
         <a>Private Label</a>
         <a>Quality</a>
         <a>Resources</a>
-        <a>Contact</a>
+        <a href="/inquiry">Contact</a>
       </nav>
       <a className="nav-cta" href="/inquiry">Get a Quote</a>
     </header>
